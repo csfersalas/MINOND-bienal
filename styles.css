@@ -34,6 +34,11 @@ body {
 
 .contacto {
     font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.contacto:hover {
+    color: gray;
 }
 
 .main-image {
