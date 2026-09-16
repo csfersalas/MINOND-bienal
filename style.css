@@ -13,14 +13,14 @@ html, body {
 
 /* El body actúa como el marco fino de 10 píxeles en todo el borde */
 body {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  gap: 10px; /* Separación justa entre el header y la imagen */
+  gap: 2px; /* Separación justa entre el header y la imagen */
 }
 
 .header {
-  height: 32px; /* Altura compacta para el logo y contacto */
+  height: 22px; /* Altura compacta para el logo y contacto */
   display: flex;
   justify-content: space-between;
   align-items: center;
