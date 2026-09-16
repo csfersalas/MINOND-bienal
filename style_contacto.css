@@ -60,3 +60,23 @@ body {
     color: gray;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 2%;
+        align-items: center;
+    }
+
+    .contact-content {
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .logo {
+        height: 25px;
+    }
+
+    .contact-info {
+        gap: 1rem;
+        font-size: 14px;
+    }
+}
