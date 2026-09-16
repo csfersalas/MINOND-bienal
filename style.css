@@ -13,21 +13,21 @@ html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Caja contenedora principal que simula los márgenes con control absoluto */
+/* Caja con proporciones basadas en la pantalla (vw y vh) */
 .site-box {
-  width: calc(100vw - 20px);
-  height: calc(100vh - 30px);
-  margin-top: 20px;     /* Margen superior doble (20px) */
-  margin-left: 10px;    /* Margen izquierdo fino (10px) */
-  margin-right: 10px;   /* Margen derecho fino (10px) */
-  margin-bottom: 10px;  /* Margen inferior fino (10px) */
+  width: 98vw;          /* 100vw menos 1vw izquierdo y 1vw derecho */
+  height: 97vh;         /* 100vh menos 2vh superior y 1vh inferior */
+  margin-top: 2vh;      /* Arriba el doble (2vh) */
+  margin-left: 1vw;     /* Lado izquierdo fino (1vw) */
+  margin-right: 1vw;    /* Lado derecho fino (1vw) */
+  margin-bottom: 1vh;   /* Abajo fino (1vh) */
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1vh;
 }
 
 .header {
-  height: 20px;
+  height: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
