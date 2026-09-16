@@ -12,11 +12,6 @@ html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* 
-  EL MARCO PERIMETRAL:
-  - Margen superior: 2.4vh (el doble para el logo + header)
-  - Margen izquierdo, derecho e inferior: 1.2vh (finos y proporcionales)
-*/
 .site-box {
   width: calc(100vw - 2.4vh);
   height: calc(100vh - 3.6vh);
@@ -28,8 +23,6 @@ html, body {
   flex-direction: column;
   gap: 1.5vh;
 }
-
-/* HEADER SUPERIOR (ALINEADO EN EL MARGEN SUPERIOR) */
 .header {
   height: 24px;
   display: flex;
@@ -68,10 +61,6 @@ html, body {
   opacity: 0.6;
 }
 
-/* 
-  CONTENEDOR DE LA IMAGEN (HOME):
-  Usamos object-fit: contain para que la foto se mantenga contenida y entera
-*/
 .image-container {
   width: 100%;
   flex: 1;
@@ -90,7 +79,6 @@ html, body {
   display: block;
 }
 
-/* CONTENEDOR DE CONTACTO (CONTACTO.HTML) */
 .contact-content {
   width: 100%;
   flex: 1;
