@@ -34,18 +34,20 @@ body {
 }
 
 .logo {
-    height: 20px;
+    height: 40px;
 }
-
+.logo-link {
+    text-decoration: none;
+}
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    font-size: 25px;
+    gap: 4rem;
+    font-size: 20px;
 }
 
 .contact-info p {
-    line-height: 4;
+    line-height: 6;
 }
 
 .contact-info a {
@@ -57,3 +59,4 @@ body {
 .contact-info a:hover {
     color: gray;
 }
+
