@@ -56,7 +56,7 @@ body {
     }
 
     .header {
-        display: none;
+        display: flex;
     }
 
     .logo {
