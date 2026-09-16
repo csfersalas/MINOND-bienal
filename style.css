@@ -11,22 +11,21 @@ html, body {
   overflow: hidden;
 }
 
-.page-container {
-  width: 98vw;
-  height: 98vh;
-  margin: 1vh auto;
+/* El body actúa como el marco fino de 10 píxeles en todo el borde */
+body {
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  gap: 1vh;
+  gap: 10px; /* Separación justa entre el header y la imagen */
 }
 
 .header {
-  height: 25px;
+  height: 32px; /* Altura compacta para el logo y contacto */
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  flex-shrink: 0;
 }
 
 .logo-link {
@@ -46,17 +45,17 @@ html, body {
 .contacto {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #111111;
+  text-decoration: none;
   cursor: pointer;
 }
 
 .image-container {
   width: 100%;
-  flex: 1;
-  margin-top: .2vh;
+  flex: 1; /* Ocupa exactamente todo el alto que sobra en la pantalla */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,39 +66,4 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-.contact-center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 0.95rem;
-  letter-spacing: 0.05em;
-  color: #111111;
-}
-
-.contact-info h2 {
-  font-weight: 400;
-  font-size: 1.05rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
-}
-
-.contact-info a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  opacity: 0.6;
 }
