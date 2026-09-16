@@ -13,7 +13,7 @@ html, body {
 }
 
 body {
-  padding: 10px 5px 5px 5px; /* Arriba 10px (el doble), costados e inferior 5px finos */
+  padding: 40px 20px 20px 20px; 
   display: flex;
   flex-direction: column;
   gap: 5px;
