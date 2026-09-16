@@ -12,12 +12,13 @@ html, body {
 }
 
 .page-container {
-  width: 100vw;
-  height: 99vh;
-  margin: 2vh 1vw;
+  width: 98vw;
+  height: 98vh;
+  margin: 1vh auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 1vh;
 }
 
 .header {
