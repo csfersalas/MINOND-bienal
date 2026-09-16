@@ -11,8 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     padding: 4%;
-    padding-top: 0.5%;
-    padding-bottom: 6%;
+    padding-top: 1%;
+    padding-bottom: 4%;
     gap: 0;
     overflow: hidden;
 }
