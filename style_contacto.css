@@ -22,7 +22,7 @@ body {
     padding-bottom: 4%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .contact-content {
@@ -41,11 +41,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    font-size: 12px;
+    font-size: 25px;
 }
 
 .contact-info p {
-    line-height: 1.6;
+    line-height: 4;
 }
 
 .contact-info a {
