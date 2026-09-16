@@ -12,15 +12,16 @@ html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Márgenes finos: 15px a los lados y abajo, y el doble arriba (30px) incluyendo el espacio del logo */
 body {
-  padding: 40px 20px 20px 20px; 
+  padding: 30px 15px 15px 15px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 12px;
 }
 
 .header {
-  height: 20px;
+  height: 32px;
   display: flex;
   align-items: center;
   width: 100%;
