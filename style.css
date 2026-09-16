@@ -1,4 +1,3 @@
-/* css/style.css */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,21 +12,26 @@ html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* Caja con proporciones basadas en la pantalla (vw y vh) */
+/* 
+  EL MARCO PERIMETRAL:
+  - Margen superior: 2.4vh (el doble para el logo + header)
+  - Margen izquierdo, derecho e inferior: 1.2vh (finos y proporcionales)
+*/
 .site-box {
-  width: 98vw;          /* 100vw menos 1vw izquierdo y 1vw derecho */
-  height: 97vh;         /* 100vh menos 2vh superior y 1vh inferior */
-  margin-top: 2vh;      /* Arriba el doble (2vh) */
-  margin-left: 1vw;     /* Lado izquierdo fino (1vw) */
-  margin-right: 1vw;    /* Lado derecho fino (1vw) */
-  margin-bottom: 1vh;   /* Abajo fino (1vh) */
+  width: calc(100vw - 2.4vh);
+  height: calc(100vh - 3.6vh);
+  margin-top: 2.4vh;
+  margin-left: 1.2vh;
+  margin-right: 1.2vh;
+  margin-bottom: 1.2vh;
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 1.5vh;
 }
 
+/* HEADER SUPERIOR (ALINEADO EN EL MARGEN SUPERIOR) */
 .header {
-  height: 25px;
+  height: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,7 +55,7 @@ html, body {
 
 .contacto {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -64,6 +68,10 @@ html, body {
   opacity: 0.6;
 }
 
+/* 
+  CONTENEDOR DE LA IMAGEN (HOME):
+  Usamos object-fit: contain para que la foto se mantenga contenida y entera
+*/
 .image-container {
   width: 100%;
   flex: 1;
@@ -74,11 +82,15 @@ html, body {
 }
 
 .image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
 
+/* CONTENEDOR DE CONTACTO (CONTACTO.HTML) */
 .contact-content {
   width: 100%;
   flex: 1;
