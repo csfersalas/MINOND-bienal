@@ -50,31 +50,31 @@ body {
 
 @media (max-width: 768px) {
     body {
-        padding: 2%;
+        padding: 1%;
         align-items: center;
+        flex-direction: column;
     }
 
     .header {
-        order: -1;
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.5rem;
-        margin-bottom: auto;
+        display: none;
     }
 
     .logo {
-        height: 25px;
+        height: 20px;
+        order: 2;
+        margin-top: 1rem;
     }
 
     .contacto {
         font-size: 10px;
-        margin-top: auto;
+        order: 3;
+        margin-top: 0.5rem;
     }
 
     .main-image {
         flex: 1;
-        width: 85%;
+        width: 95%;
         object-fit: contain;
+        order: 1;
     }
 }
