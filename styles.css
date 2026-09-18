@@ -37,6 +37,7 @@ body {
     text-decoration: none;
     color: black;
 }
+
 .contacto:hover {
     color: gray;
 }
@@ -53,17 +54,16 @@ body {
         padding: 2%;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .header {
-        order: -1;
+        position: absolute;
+        top: 2%;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
         width: 100%;
-        margin-bottom: 2rem;
-        margin-top: 6rem;
     }
 
     .logo {
@@ -71,15 +71,13 @@ body {
     }
 
     .contacto {
-        order: 3;
         font-size: 10px;
-        margin-top: auto;
-        margin-bottom: 1rem;
     }
 
     .main-image {
         flex: 1;
         width: 100%;
+        height: auto;
         object-fit: contain;
     }
 }
