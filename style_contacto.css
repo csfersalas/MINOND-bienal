@@ -12,6 +12,7 @@ body {
     font-family: Helvetica, sans-serif;
     font-weight: 300;
     overflow: hidden;
+    color: white;
 }
 
 .container {
@@ -46,10 +47,12 @@ body {
     flex-direction: column;
     gap: 1rem;
     font-size: 20px;
+    color: white;
 }
 
 .contact-info p {
     line-height: 1;
+    color: white;
 }
 
 .contact-info a {
@@ -92,5 +95,6 @@ body {
     .contact-info {
         gap: 1rem;
         font-size: 14px;
+        color: white;
     }
 }
