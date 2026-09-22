@@ -74,7 +74,7 @@ html, body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        gap: 20px;               /* Espacio entre la cabecera y el video */
+        gap: 10px;               /* Espacio entre la cabecera y el video */
     }
 
     .header {
