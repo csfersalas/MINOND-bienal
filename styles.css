@@ -12,6 +12,53 @@ html, body {
     font-family: Helvetica, sans-serif;
 }
 
+/* DESKTOP (Vuelve a organizar la versión web) */
+@media (min-width: 769px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        padding: 2vh 2vw;       
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        max-width: 95vw;        
+        gap: 10px;              
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo {
+        height: 28px;           
+    }
+
+    .contacto {
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: 200;
+        letter-spacing: 0.05em;
+    }
+
+    .contacto:hover {
+        color: gray;
+    }
+
+    .video {
+        height: 88vh;          
+        width: auto;            
+        display: block;
+    }
+}
+
 @media (max-width: 768px) {
     html, body {
         height: 100vh;
@@ -27,7 +74,7 @@ html, body {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        gap: 15px;               /* Espacio entre la cabecera y el video */
+        gap: 40px;               /* Espacio entre la cabecera y el video */
     }
 
     .header {
@@ -35,7 +82,8 @@ html, body {
         display: flex;
         flex-direction: row;     /* En fila: elementos lado a lado */
         justify-content: space-between; /* Logo a la izquierda, contacto a la derecha */
-        align-items: center;     /* Alineados verticalmente en su eje */
+        align-items: center;   
+        padding-bottom: 5%;/* Alineados verticalmente en su eje */
         width: 100%;
     }
 
