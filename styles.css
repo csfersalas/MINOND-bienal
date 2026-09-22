@@ -83,7 +83,6 @@ html, body {
         flex-direction: row;     /* En fila: elementos lado a lado */
         justify-content: space-between; /* Logo a la izquierda, contacto a la derecha */
         align-items: center;   
-        padding-bottom: 5%;/* Alineados verticalmente en su eje */
         width: 100%;
     }
 
