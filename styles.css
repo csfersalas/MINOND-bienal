@@ -1,4 +1,17 @@
-/* COMPUTADORA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    font-family: Helvetica, sans-serif;
+}
+
 @media (min-width: 769px) {
     body {
         display: flex;
