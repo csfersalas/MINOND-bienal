@@ -1,28 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: black;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    font-family: Helvetica, sans-serif;
-}
-
-/* COMPUTADORA: La caja central que contiene todo en proporción */
+/* COMPUTADORA*/
 @media (min-width: 769px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        padding: 2vh 2vw;       
+    }
+
     .contenedor {
         display: flex;
         flex-direction: column;
         width: fit-content;
-        max-width: 85vw;
-        gap: 12px;
+        max-width: 95vw;       
+        gap: 10px;              
     }
 
     .header {
@@ -33,14 +23,15 @@ body {
     }
 
     .logo {
-        height: 30px;
+        height: 28px;           
     }
 
     .contacto {
         color: white;
         text-decoration: none;
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 200;
+        letter-spacing: 0.05em;
     }
 
     .contacto:hover {
@@ -48,13 +39,13 @@ body {
     }
 
     .video {
-        height: 75vh;
-        width: auto;
+        height: 88vh;          
+        width: auto;            
         display: block;
     }
 }
 
-/* MOBILE: Tu código original intacto */
+/* MOBILE*/
 @media (max-width: 768px) {
     body {
         padding: 2%;
