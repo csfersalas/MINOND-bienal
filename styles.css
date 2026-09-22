@@ -13,23 +13,34 @@ html, body {
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 2%;
-        flex-direction: column;
+    html, body {
+        height: 100vh;
+        height: 100dvh;          /* Asegura el alto en Safari iOS */
+        display: flex;
+        justify-content: center; /* Centra el bloque completo en la pantalla */
+        align-items: center;
+        padding: 4% 4%;          /* Margen lateral para despegar del borde */
     }
 
-    .header {
-        position: absolute;
-        top: 12%;
+    .contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 1rem;
+        width: 100%;
+        gap: 15px;               /* Espacio entre la cabecera y el video */
+    }
+
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: row;     /* En fila: elementos lado a lado */
+        justify-content: space-between; /* Logo a la izquierda, contacto a la derecha */
+        align-items: center;     /* Alineados verticalmente en su eje */
         width: 100%;
     }
 
     .logo {
-        height: 35px;
+        height: 28px;
     }
 
     .contacto {
@@ -39,7 +50,9 @@ html, body {
     }
 
     .video {
-        width: 100%;
-        height: auto;
+        width: 100%;             /* Ocupa todo el ancho disponible */
+        max-height: 75vh;        /* Asegura que no sobrepase el alto visible */
+        object-fit: contain;     /* Conserva la proporción original del video */
+        display: block;
     }
 }
