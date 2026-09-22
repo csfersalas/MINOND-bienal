@@ -58,35 +58,3 @@ html, body {
     }
 }
 
-/* MOBILE*/
-@media (max-width: 768px) {
-    body {
-        padding: 2%;
-        flex-direction: column;
-    }
-
-    .header {
-        position: absolute;
-        top: 12%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        width: 100%;
-    }
-
-    .logo {
-        height: 35px;
-    }
-
-    .contacto {
-        font-size: 14px;
-        text-decoration: none;
-        color: white;
-    }
-
-    .video {
-        width: 100%;
-        height: auto;
-    }
-}
